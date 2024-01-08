@@ -1,0 +1,19 @@
+<div>
+  <div class="data-input">
+    <label for="interval">Timer, ms:</label>
+    <input type="number" id="interval" name="interval" [(ngModel)]="timerInterval"
+           (ngModelChange)="updatePseudoSocket()" required>
+  </div>
+  <div class="data-input">
+    <label for="dataSize">Array size</label>
+    <input type="number" id="dataSize" name="dataSize" [(ngModel)]="dataArraySize"
+           (ngModelChange)="updatePseudoSocket()" required>
+  </div>
+  <div class="data-input">
+    <label for="additionalIds">Additional array ids</label>
+    <input type="text" id="additionalIds" name="additionalIds" [(ngModel)]="additionalIdsString"
+           (ngModelChange)="updatePseudoSocket()" required>
+  </div>
+
+  <app-last-ten-elements [data]="data"></app-last-ten-elements>
+</div>

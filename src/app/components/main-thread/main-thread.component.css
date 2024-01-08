@@ -1,0 +1,6 @@
+.data-input {
+  display: flex;
+  flex-direction: column;
+  float: left;
+  margin: 1rem;
+}
